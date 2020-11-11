@@ -1,13 +1,324 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header{
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
+.hleft{
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+.hleftlogo{
+  width: 20%;
+}
+.hlogo{
+  font-size: 40px;
+  color: #51a2c4;
+}
+.hsearch{
+  width: 40%;
+  position: relative;
+  margin-top: 0px;
+  
+}
+.hicon{
+  position:absolute;
+  left: 20px;
+  top: 13px;
+  color: silver;
+}
+.hbar{
+  width: 100%;
+  padding: 15px 45px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  border-radius: 30px;
+  outline: none;
+  display: flex;
+}
+.hcenter{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.hmicons{
+  font-size: 20px;
+  color: rgb(143, 132, 132);
+  top: 30px;
+
+}
+.hnotify{
+  display: flex;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  color: white;
+  background-color: red;
+  top: 0px;
+  left: 10px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+.cIcon{
+  display: inline-block;
+  position: relative;
+}
+.hlast{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  display: flex;
+}
+.hlastpart{
+  display: flex;
+  width: 45px;
+  height: 45px;
+  background-color:rgb(240, 240, 240);
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  margin: 0 15px;
+}
+.facebook{
+  display: flex;
+  margin-top: 70px;
+}
+.left{
+  width: 25%;
+  position: fixed;
+  top: 90px;
+}
+.leftl{
+display: flex;
+padding: 10px 30px;
+align-items: center;
+}
+.leftimg{
+width: 35px;
+height: 35px;
+border-radius: 50%;
+overflow: hidden;
+display: flex;
+}
+.leftimg img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+.leftlname{
+margin-left: 12px;
+font-weight: bold;
+}
+.M{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 50px;
+}
+.updates{
+  width: 100%;
+  display: flex;
+  }
+  .updatesc{
+  width: 25%;
+  
+  }
+  .updatesb{
+    height: 250px;
+    padding:0 10px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  
+  }
+  .updatesbo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    }
+    .updatesboimg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top:10px ;
+    margin-left:20px ;
+    border: 3px solid blue;
+    }
+    .updatesbo img{
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    } 
+    .updatesboname{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    }
+    .status{
+      width: 80%;
+      margin: 15px auto;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    .statusf{
+    display: flex;
+    width: 100%;
+    }
+    .statusfimg span{
+     display: inline-block;
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     overflow: hidden;
+    }
+    .statusfin{
+      width: 80%;
+    }
+    .statusfinp{
+      width: 100%;
+      padding: 15px 25px;
+      border: none;
+      background-color: rgb(236, 236, 236);
+      outline: none; 
+      border-radius: 25px;
+    }
+    .statusfimg span img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .statusse{
+      width: 100%;
+      border-top: solid #f0f2f5;
+      margin-top: 12px;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .statuseicon{
+      display: flex;
+      align-items:center ;
+
+    }
+    .live{
+    font-size: 24px;
+     color: rgb(255, 0, 119);
+    }
+    .photo{
+      font-size: 24px;
+      color: rgb(55, 0, 255);
+    }
+    .feeling{
+      font-size: 24px;
+     color: yellow;
+    }
+    .text{
+      margin-left: 5px;
+    }
+    .news{
+     width: 80%;
+     margin: 50px auto;
+     background-color: #f0f2f5;
+     border-radius: 10px;
+    }
+    .empty{
+     
+    }
+    .newsheader{
+    display: flex;
+    align-items: center;
+    }
+    .newsheaderimg{
+      width: 35px;
+      height: 35px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    .newsheaderimg img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .newsheadername{
+       color: black;
+       font-size: 15px;
+       font-style: italic;
+       font-weight: bold;
+       margin-left: 12px;
+
+    }
+    .date{
+     color: silver;
+     font-weight: 300;
+     font-size: 14px;
+    }
+    .newsbody{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+    }
+    .newsbodytext{
+      width: 100%;
+      margin: 12px 12px;
+      color: black;
+      font-size: 20px;
+      font-style: oblique;
+    }
+    .newsbodyimg img{
+     width: 100%;
+     height: 100%;
+    }
+    .freind{
+     width: 25%;
+     top: 100px;
+     position: fixed;
+     right: 0;
+     overflow-y: scroll;
+    }
+    .friendlist{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    }
+    .freindlistimg{
+      width: 35px;
+      height: 35px;
+      object-fit: cover;
+      position: relative;
+    }
+.s{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  right: 0;
+}
+.freindlistimg img{
+  width: 100%;
+  height: 100%;
+  border-radius:50% ;
+  object-fit: cover;
+}
+.freindlistname{
+  margin-left: 10px;
 }
